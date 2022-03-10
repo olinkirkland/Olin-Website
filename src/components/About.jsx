@@ -1,9 +1,11 @@
+import portrait from '../assets/img/portrait.jpg';
+
 function About() {
   return (
     <section id="about" class="section-about-me">
       <div class="container intro">
         <div class="intro-image">
-          <img src="assets/img/portrait.jpg" alt="A picture of Olin Kirkland" />
+          <img src={portrait} alt="A picture of Olin Kirkland" />
         </div>
         <div class="intro-content">
           <h2>

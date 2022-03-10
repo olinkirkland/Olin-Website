@@ -1,3 +1,5 @@
+import Pdf from '../assets/files/olin-kirkland-resume.pdf';
+
 function Hero() {
   return (
     <section class="section-hero">
@@ -37,16 +39,12 @@ function Hero() {
             </li>
           </ul>
           <div class="resume-container">
-            <a
-              href="assets/files/olin-kirkland-resume.pdf"
-              target="_blank"
-              class="btn"
-            >
+            <a href={Pdf} target="_blank" class="btn">
               <span>My Resume</span>
             </a>
             <a
               class="resume-download"
-              href="assets/files/olin-kirkland-resume.pdf"
+              href={Pdf}
               download="olin-kirkland-resume.pdf"
             >
               <i class="fas fa-download"></i>

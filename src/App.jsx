@@ -11,7 +11,9 @@ function App() {
     <>
       <Hero />
       <About />
+      <hr />
       <Skills />
+      <hr />
       <Projects />
       <Footer />
     </>
