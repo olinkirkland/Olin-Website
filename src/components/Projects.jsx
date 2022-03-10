@@ -1,4 +1,3 @@
-import Masonry from './Masonry';
 
 const projects = [
   { name: 'realm-writer', img: 'realm-writer.jpg', big: true },
@@ -54,16 +53,7 @@ function Projects() {
         to typical web fare.
       </p>
 
-      <Masonry columns={3}>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, explicabo?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugiat.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus velit facilis. Soluta, ducimus fuga.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error corrupti culpa porro magnam ad libero pariatur voluptatum dolorum sit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, maiores.</p>
-      </Masonry>
-
-      {/* <ul className="project-cards">
+      <ul className="masonry">
         {projects.map((project, index) => (
           <li
             key={index}
@@ -78,7 +68,7 @@ function Projects() {
             />
           </li>
         ))}
-      </ul> */}
+      </ul>
     </section>
   );
 }
