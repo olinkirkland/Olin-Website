@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/olin-website/static/css/main.073c9b0a.css",
-    "main.js": "/olin-website/static/js/main.fd56dc1d.js",
-    "static/js/787.ac23c493.chunk.js": "/olin-website/static/js/787.ac23c493.chunk.js",
-    "static/media/logo.svg": "/olin-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/olin-website/static/css/main.8642920e.css",
+    "main.js": "/olin-website/static/js/main.8c8656ad.js",
+    "static/media/splash.jpg": "/olin-website/static/media/splash.d7fc1e246f39ce3c0d57.jpg",
+    "static/media/olin-kirkland-resume.pdf": "/olin-website/static/media/olin-kirkland-resume.28719ce10da7073f22a6.pdf",
+    "static/media/portrait.jpg": "/olin-website/static/media/portrait.83be18d8c071ab8a6f9a.jpg",
     "index.html": "/olin-website/index.html",
-    "main.073c9b0a.css.map": "/olin-website/static/css/main.073c9b0a.css.map",
-    "main.fd56dc1d.js.map": "/olin-website/static/js/main.fd56dc1d.js.map",
-    "787.ac23c493.chunk.js.map": "/olin-website/static/js/787.ac23c493.chunk.js.map"
+    "static/media/udemy.svg": "/olin-website/static/media/udemy.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
+    "main.8642920e.css.map": "/olin-website/static/css/main.8642920e.css.map",
+    "main.8c8656ad.js.map": "/olin-website/static/js/main.8c8656ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.fd56dc1d.js"
+    "static/css/main.8642920e.css",
+    "static/js/main.8c8656ad.js"
   ]
 }
