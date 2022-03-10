@@ -1,4 +1,4 @@
-import portrait from '../assets/img/portrait.jpg';
+import portrait from '../assets/images/portrait.jpg';
 
 function About() {
   return (

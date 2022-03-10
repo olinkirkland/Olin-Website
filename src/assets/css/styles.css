@@ -164,7 +164,7 @@ a:active {
   justify-content: center;
 
   background: linear-gradient(rgba(255, 63, 63, 0.3), rgba(84, 54, 255, 0.3)),
-    url(../img/splash.jpg);
+    url(../images/splash.jpg);
   background-position-y: bottom;
   object-fit: cover;
   background-size: cover;

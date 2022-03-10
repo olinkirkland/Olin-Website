@@ -1,4 +1,5 @@
 const projects = [
+  { name: 'realm-writer', img: 'realm-writer.jpg', big: true },
   { name: 'woodland-stories', img: 'woodland-stories.jpg', big: true },
   { name: 'realms', img: 'realms.jpg' },
   { name: 'worlds', img: 'worlds.jpg' },
