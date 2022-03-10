@@ -1,0 +1,114 @@
+/* rem and em do NOT depend on HTML font-size in media queries 
+instead, 1rem = 1em = 16px */
+
+/* rem has some bugs in some browsers when used in media
+ queries, so use em */
+
+/**************************************/
+/* L -- BELOW 1200 */
+/**************************************/
+
+/* 1200px / 16px = 75 */
+@media (max-width: 75em) {
+}
+
+/**************************************/
+/* M -- BELOW 992 */
+/**************************************/
+
+/* 992px / 16px = 62 */
+@media (max-width: 62em) {
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .intro-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .project-card--big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************************/
+/* S -- BELOW 768 */
+/**************************************/
+
+/* 768px / 16px = 48 */
+@media (max-width: 48em) {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .hover-tile:hover {
+    top: 0;
+  }
+
+  .section-hero {
+    /* vh doesn't work well on iOS */
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .scroll-prompt {
+    display: none;
+  }
+
+  .header-content {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .resume-download {
+    display: none;
+  }
+
+  .header-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .header-links {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .intro-image {
+    margin: 0 0 2rem 0;
+  }
+
+  .udemy-certificates {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    aspect-ratio: 3;
+  }
+
+  .tag-container {
+    justify-content: center;
+  }
+}
