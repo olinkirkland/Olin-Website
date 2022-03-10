@@ -94,23 +94,25 @@ const months = [
 
 function Skills() {
   return (
-    <section class="section-skills">
-      <div class="container">
-        <h2 class="text-center">
+    <section className="section-skills">
+      <div className="container">
+        <h2 className="text-center">
           <strong>Skills</strong> and Proficiencies
         </h2>
-        <p class="text-center">
+        <p className="text-center">
           I have over<strong> 7 years</strong> of front-end design and
           development experience.
         </p>
-        <ul class="skills-list">
-          {skills.map((skill) => (
-            <li class="badge">{skill}</li>
+        <ul className="skills-list">
+          {skills.map((skill, index) => (
+            <li key={index} className="badge">
+              {skill}
+            </li>
           ))}
         </ul>
-        <ul class="certificates-list">
-          {certificates.map((certificate) => (
-            <li class="certificate-card hover-tile" href="">
+        <ul className="certificates-list">
+          {certificates.map((certificate, index) => (
+            <li key={index} className="certificate-card hover-tile" href="">
               <a href={certificate.url} target="_blank">
                 <div className="certificate-header">
                   <img src={certificate.type} alt="Udemy logo" />

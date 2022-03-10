@@ -2,20 +2,20 @@ import portrait from '../assets/img/portrait.jpg';
 
 function About() {
   return (
-    <section id="about" class="section-about-me">
-      <div class="container intro">
-        <div class="intro-image">
+    <section id="about" className="section-about-me">
+      <div className="container intro">
+        <div className="intro-image">
           <img src={portrait} alt="A picture of Olin Kirkland" />
         </div>
-        <div class="intro-content">
+        <div className="intro-content">
           <h2>
             I bring a<strong> unique perspective</strong> to application design
             through my background in<strong> museums</strong> and<strong> games</strong>.
           </h2>
 
-          <div class="intro-cards">
-            <div class="intro-card">
-              <i class="fas fa-archway"></i>
+          <div className="intro-cards">
+            <div className="intro-card">
+              <i className="fas fa-archway"></i>
               <p>
                 I design for intuition. I built touch-screen apps for
                 <strong> museum exhibits</strong>, developed front-end solutions
@@ -24,8 +24,8 @@ function About() {
               </p>
             </div>
 
-            <div class="intro-card">
-              <i class="fas fa-code"></i>
+            <div className="intro-card">
+              <i className="fas fa-code"></i>
               <p>
                 Agnostic of platform, I'm dedicated to developing software that
                 adheres to best practices and<strong> design patterns</strong>.
@@ -35,8 +35,8 @@ function About() {
               </p>
             </div>
 
-            <div class="intro-card">
-              <i class="fas fa-globe-americas"></i>
+            <div className="intro-card">
+              <i className="fas fa-globe-americas"></i>
               <p>
                 I am a native<strong> English and German</strong> speaker.
                 <br />

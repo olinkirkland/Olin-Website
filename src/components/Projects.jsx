@@ -42,24 +42,25 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" class="section-projects container">
-      <h2 class="text-center">
+    <section id="projects" className="section-projects container">
+      <h2 className="text-center">
         My <strong>Projects</strong>
       </h2>
-      <p class="text-center">
+      <p className="text-center">
         My projects range from <strong>museum applications</strong>, to games,
         to typical web fare.
       </p>
-      <ul class="project-cards" onclick="onClickProjectCard(event)">
-        {projects.map((project) => (
+      <ul className="project-cards">
+        {projects.map((project, index) => (
           <li
-            class={
+            key={index}
+            className={
               'hover-tile project-card ' +
               (project.big ? 'project-card--big' : '')
             }
           >
             <img
-              src={`/projects/thumbnails/${project.img}`}
+              src={`${process.env.PUBLIC_URL}/projects/thumbnails/${project.img}`}
               alt={project.name}
             />
           </li>
