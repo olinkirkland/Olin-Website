@@ -1,4 +1,4 @@
-import udemy from '../assets/img/udemy.svg';
+import udemy from '../assets/images/udemy.svg';
 // import codecademy from '../assets/img/codecademy.svg';
 
 const skills = [
