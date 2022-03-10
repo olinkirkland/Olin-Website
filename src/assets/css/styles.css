@@ -431,9 +431,6 @@ a:active {
 
 footer {
   background-color: #343a40;
-}
-
-.section-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,11 +439,11 @@ footer {
   padding: 6rem;
 }
 
-.section-footer .social-links {
+footer .social-links {
   margin-bottom: 0.8rem;
 }
 
-.section-footer p {
+footer p {
   margin: 0;
   letter-spacing: 0.8px;
 }
