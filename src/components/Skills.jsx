@@ -1,3 +1,6 @@
+import udemy from '../assets/img/udemy.svg';
+// import codecademy from '../assets/img/codecademy.svg';
+
 const skills = [
   'JavaScript',
   'TypeScript',
@@ -16,6 +19,72 @@ const skills = [
   'Adobe Animate'
 ];
 
+const certificates = [
+  {
+    type: udemy,
+    name: 'Build Responsive Real-World Websites with HTML and CSS',
+    date: {
+      month: 0,
+      year: 2022
+    }
+  },
+  {
+    type: udemy,
+    name: 'Tailwind CSS: A Modern Way to Build Websites Using CSS',
+    date: {
+      month: 0,
+      year: 2022
+    }
+  },
+  {
+    type: udemy,
+    name: 'Figma - UI/UX Design Essential Training',
+    date: {
+      month: 11,
+      year: 2021
+    }
+  },
+  {
+    type: udemy,
+    name: 'The Git & Github Bootcamp',
+    date: {
+      month: 10,
+      year: 2021
+    }
+  },
+  {
+    type: udemy,
+    name: 'Understanding TypeScript - 2022 Edition',
+    date: {
+      month: 10,
+      year: 2021
+    }
+  },
+  {
+    type: udemy,
+    name: 'The Bootstrap 4 Bootcamp',
+    date: {
+      month: 2,
+      year: 2022
+    }
+  }
+];
+
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+
 function Skills() {
   return (
     <section class="section-skills">
@@ -32,14 +101,26 @@ function Skills() {
             <li class="badge">{skill}</li>
           ))}
         </ul>
-        <div class="udemy-certificates">
+        <ul class="certificates-list">
+          {certificates.map((certificate) => (
+            <li class="certificate-card hover-tile" href="">
+              <a href="http://www.google.com" target="_blank">
+                <div className="certificate-header">
+                  <img src={certificate.type} alt="Udemy logo" />
+                  <p className="certificate-name">{certificate.name}</p>
+                </div>
+                <p className="certificate-date">
+                  {`${months[certificate.date.month]} ${certificate.date.year}`}
+                </p>
+              </a>
+            </li>
+          ))}
           <div class="udemy-certificate hover-tile">
             <a
               href="https://www.udemy.com/certificate/UC-90b286ba-f59a-48c5-90e1-b7c674c70802"
               target="_blank"
             >
               <div class="cert-header">
-                <img src="assets/svg-icons/udemy.svg" alt="Udemy logo" />
                 <p class="cert-name">
                   Build Responsive Real-World Websites with HTML and CSS
                 </p>
@@ -101,7 +182,7 @@ function Skills() {
               <p class="cert-date">November 2021</p>
             </a>
           </div>
-        </div>
+        </ul>
       </div>
     </section>
   );

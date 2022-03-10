@@ -316,16 +316,16 @@ a:active {
   margin-bottom: 0;
 }
 
-/* UDEMY CERTIFICATES */
+/* CERTIFICATES */
 
-.udemy-certificates {
+.certificates-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   gap: 2rem;
 }
 
-.udemy-certificate {
+.certificate-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,12 +334,7 @@ a:active {
   height: 100%;
 }
 
-.udemy-certificate p {
-  width: 100%;
-  margin: 0;
-}
-
-.cert-header {
+.certificate-header {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -347,23 +342,28 @@ a:active {
   height: 6rem;
 }
 
-.cert-name {
+.certificate-card p {
+  width: 100%;
+  margin: 0;
+}
+
+.certificate-card img {
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.4;
+}
+
+.certificate-name {
   font-size: 1.4rem;
   font-weight: bold;
   color: #343a40;
 }
 
-.cert-date {
+.certificate-date {
   color: rgba(52, 58, 64, 0.6);
   margin-bottom: 0;
   text-align: center;
   font-size: 1.2rem;
-}
-
-.udemy-certificate img {
-  width: 3.2rem;
-  height: 3.2rem;
-  opacity: 0.4;
 }
 
 /* PROJECTS */
