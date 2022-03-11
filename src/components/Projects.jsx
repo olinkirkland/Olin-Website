@@ -1,44 +1,144 @@
 const projects = [
-  { name: 'realm-writer', img: 'realm-writer.jpg' },
-  { name: 'woodland-stories', img: 'woodland-stories.jpg' },
-  { name: 'realms', img: 'realms.jpg' },
-  { name: 'worlds', img: 'worlds.jpg' },
-  { name: 'castle-map', img: 'castle-map.jpg' },
-  { name: 'crest', img: 'crest.jpg' },
-  { name: 'death-calculator', img: 'death-calculator.jpg' },
-  { name: 'energy-career-quiz', img: 'energy-career-quiz.jpg' },
-  { name: 'energy-map', img: 'energy-map.jpg' },
-  { name: 'fracking-game', img: 'fracking-game.jpg' },
-  { name: 'geologic-timeline', img: 'geologic-timeline.jpg' },
-  { name: 'geosteering-game', img: 'geosteering-game.jpg' },
-  { name: 'hydrocarbon-info-1', img: 'hydrocarbon-info-1.jpg' },
-  { name: 'hydrocarbon-info-2', img: 'hydrocarbon-info-2.jpg' },
-  { name: 'renewables-1', img: 'renewables-1.jpg' },
-  { name: 'hydrocarbon-info-3', img: 'hydrocarbon-info-3.jpg' },
-  { name: 'medieval-armor', img: 'medieval-armor.jpg' },
-  { name: 'pipeline-kiosk', img: 'pipeline-kiosk.jpg' },
-  { name: 'prospector-game', img: 'prospector-game.jpg' },
-  { name: 'renewables-2', img: 'renewables-2.jpg' },
-  { name: 'renewables-3', img: 'renewables-3.jpg' },
-  { name: 'renewables-4', img: 'renewables-4.jpg' },
-  { name: 'renewables-5', img: 'renewables-5.jpg' },
-  { name: 'renewables-6', img: 'renewables-6.jpg' },
-  { name: 'renewables-7', img: 'renewables-7.jpg' },
-  { name: 'seismic-kiosks', img: 'seismic-kiosks.jpg' },
-  { name: 'tectonics', img: 'tectonics.jpg' },
-  { name: 'transportation-game', img: 'transportation-game.jpg' },
+  {
+    name: 'realms writer',
+    img: 'realms-writer.jpg',
+    tags: ['html', 'css', 'typescript', 'procedural generation']
+  },
+  {
+    name: 'woodland stories',
+    img: 'woodland-stories.jpg',
+    tags: ['html', 'css']
+  },
+  {
+    name: 'realms',
+    img: 'realms.jpg',
+    tags: ['actionscript', 'flex', 'procedural generation']
+  },
+  {
+    name: 'worlds',
+    img: 'worlds.jpg',
+    tags: ['actionscript', 'flex', 'procedural generation']
+  },
+  {
+    name: 'world maker',
+    img: 'world-maker-1.jpg',
+    tags: ['actionscript', 'flex', 'procedural generation']
+  },
+  {
+    name: 'world maker',
+    img: 'world-maker-2.jpg',
+    tags: ['actionscript', 'flex', 'procedural generation']
+  },
+  {
+    name: 'castle map',
+    img: 'castle-map.jpg',
+    tags: ['actionscript', 'flex', 'PlayerIO', 'C#']
+  },
+  { name: 'crest designer', img: 'crest.jpg', tags: ['actionscript'] },
+  {
+    name: 'death calculator',
+    img: 'death-calculator.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'energy career-quiz',
+    img: 'energy-career-quiz.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'energy map',
+    img: 'energy-map.jpg',
+    tags: ['actionscript', 'flex', 'arcgis']
+  },
+  { name: 'fracking game', img: 'fracking-game.jpg', tags: ['actionscript'] },
+  {
+    name: 'geologic timeline',
+    img: 'geologic-timeline.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'geosteering game',
+    img: 'geosteering-game.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'hydrocarbon info',
+    img: 'hydrocarbon-info-1.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'hydrocarbon info',
+    img: 'hydrocarbon-info-2.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'hydrocarbon info',
+    img: 'hydrocarbon-info-3.jpg',
+    tags: ['actionscript']
+  },
+  { name: 'medieval armor', img: 'medieval-armor.jpg', tags: ['actionscript'] },
+  { name: 'pipeline kiosk', img: 'pipeline-kiosk.jpg', tags: ['actionscript'] },
+  {
+    name: 'prospector game',
+    img: 'prospector-game.jpg',
+    tags: ['actionscript', 'arduino']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-1.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-2.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-3.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-4.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-5.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-6.jpg',
+    tags: ['actionscript']
+  },
+  {
+    name: 'renewables kiosks',
+    img: 'renewables-7.jpg',
+    tags: ['actionscript']
+  },
+  { name: 'seismic kiosks', img: 'seismic-kiosks.jpg', tags: ['actionscript'] },
+  { name: 'tectonics app', img: 'tectonics.jpg', tags: ['actionscript'] },
+  {
+    name: 'transportation game',
+    img: 'transportation-game.jpg',
+    tags: ['unity', 'c#', 'actionscript']
+  },
   {
     name: 'traps-interactive-projection',
-    img: 'traps-interactive-projection.jpg'
+    img: 'traps-interactive-projection.jpg',
+    tags: ['actionscript']
   },
   {
     name: 'unconventional-energy-kiosks',
-    img: 'unconventional-energy-kiosks.jpg'
+    img: 'unconventional-energy-kiosks.jpg',
+    tags: ['actionscript']
   },
-  { name: 'altar', img: 'altar.jpg' },
-  { name: 'galaxy-heist', img: 'galaxy-heist.jpg' },
-  { name: 'game-studio', img: 'game-studio.jpg' },
-  { name: 'Omg', img: 'Omg.jpg' }
+  { name: 'altar', img: 'altar.jpg', tags: ['PlayerIO', 'C#', 'actionscript'] },
+  { name: 'galaxy heist', img: 'galaxy-heist.jpg', tags: ['actionscript'] },
+  { name: 'game studio', img: 'game-studio.jpg', tags: ['actionscript'] },
+  { name: 'omg', img: 'Omg.jpg', tags: ['actionscript', 'flex'] }
 ];
 
 function Projects() {
@@ -53,12 +153,22 @@ function Projects() {
       </p>
 
       <ul className="masonry">
-        {projects.map((project, index) => (
-          <li key={index} className="project-card">
-            <img
-              src={`${process.env.PUBLIC_URL}/projects/thumbnails/${project.img}`}
-              alt={project.name}
-            />
+        {projects.map((project, i) => (
+          <li key={i} className="hover-tile project-card">
+            <div className="project-card-img-container">
+              <img
+                src={`${process.env.PUBLIC_URL}/projects/thumbnails/${project.img}`}
+                alt={project.name}
+              />
+            </div>
+            <div className="project-card-body">
+              <p>{project.name}</p>
+              <ul className="tags">
+                {project.tags.map((tag, j) => (
+                  <li key={j}>{tag}</li>
+                ))}
+              </ul>
+            </div>
           </li>
         ))}
       </ul>

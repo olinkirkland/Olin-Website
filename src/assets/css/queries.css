@@ -25,20 +25,6 @@ instead, 1rem = 1em = 16px */
   .intro-cards {
     grid-template-columns: 1fr;
   }
-
-  .project-cards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-  }
-
-  .project-card--big {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .project-card {
-    grid-template-columns: 1fr;
-  }
 }
 
 /**************************************/
@@ -96,16 +82,21 @@ instead, 1rem = 1em = 16px */
     margin: 0 0 2rem 0;
   }
 
-  .udemy-certificates {
+  .certificates-list {
     grid-template-columns: 1fr;
   }
 
-  .project-cards {
-    grid-template-columns: 1fr;
+  ul.masonry {
+    column-count: 1;
   }
 
-  .project-card {
-    aspect-ratio: 3;
+  .project-img-box {
+    height: 16rem;
+  }
+
+  .project-card img {
+    height: fit-content;
+    opacity: 1;
   }
 
   .tag-container {
