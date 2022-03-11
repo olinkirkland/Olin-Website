@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/olin-website/static/css/main.7dcec89a.css",
+    "main.css": "/olin-website/static/css/main.40dcab50.css",
     "main.js": "/olin-website/static/js/main.14742e48.js",
     "static/media/splash.jpg": "/olin-website/static/media/splash.d7fc1e246f39ce3c0d57.jpg",
     "static/media/olin-kirkland-resume.pdf": "/olin-website/static/media/olin-kirkland-resume.28719ce10da7073f22a6.pdf",
     "static/media/portrait.jpg": "/olin-website/static/media/portrait.83be18d8c071ab8a6f9a.jpg",
     "index.html": "/olin-website/index.html",
     "static/media/udemy.svg": "/olin-website/static/media/udemy.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
-    "main.7dcec89a.css.map": "/olin-website/static/css/main.7dcec89a.css.map",
+    "main.40dcab50.css.map": "/olin-website/static/css/main.40dcab50.css.map",
     "main.14742e48.js.map": "/olin-website/static/js/main.14742e48.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dcec89a.css",
+    "static/css/main.40dcab50.css",
     "static/js/main.14742e48.js"
   ]
 }
