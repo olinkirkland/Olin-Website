@@ -5,7 +5,7 @@ function About() {
     <section id="about" className="section-about-me">
       <div className="container intro">
         <div className="intro-image">
-          <img src={portrait} alt="A picture of Olin Kirkland" />
+          <img src={portrait} alt="Olin Kirkland" />
         </div>
         <div className="intro-content">
           <h2>
@@ -43,7 +43,7 @@ function About() {
                 <br />
                 Off screen, I like exploring new places, writing about fictional
                 worlds, hiking, and playing board games.
-              </p>
+              </p>1
             </div>
           </div>
         </div>

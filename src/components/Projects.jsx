@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 const projects = [
   {
     name: 'realms writer',
@@ -32,7 +34,7 @@ const projects = [
   {
     name: 'castle map',
     img: 'castle-map.jpg',
-    tags: ['actionscript', 'flex', 'PlayerIO', 'C#']
+    tags: ['actionscript', 'flex', 'playerio', 'c#']
   },
   { name: 'crest designer', img: 'crest.jpg', tags: ['actionscript'] },
   {
@@ -135,13 +137,32 @@ const projects = [
     img: 'unconventional-energy-kiosks.jpg',
     tags: ['actionscript']
   },
-  { name: 'altar', img: 'altar.jpg', tags: ['PlayerIO', 'C#', 'actionscript'] },
+  { name: 'altar', img: 'altar.jpg', tags: ['playerio', 'c#', 'actionscript'] },
   { name: 'galaxy heist', img: 'galaxy-heist.jpg', tags: ['actionscript'] },
   { name: 'game studio', img: 'game-studio.jpg', tags: ['actionscript'] },
   { name: 'omg', img: 'omg.jpg', tags: ['actionscript', 'flex'] }
 ];
 
 function Projects() {
+  const [filters, setFilters] = useState([]);
+
+  useEffect(() => {
+    setFilters(
+      projects.reduce((accumulator, p) => {
+        if (!accumulator.includes('all')) accumulator.push('all');
+        p.tags.forEach((t) => {
+          if (!accumulator.includes(t)) accumulator.push(t);
+        });
+
+        return accumulator;
+      }, [])
+    );
+  }, []);
+
+  function onClickFilter({ target }) {
+    console.log(target);
+  }
+
   return (
     <section id="projects" className="section-projects container">
       <h2 className="text-center">
@@ -152,6 +173,11 @@ function Projects() {
         to typical web fare.
       </p>
 
+      <div className="filter-list" onClick={onClickFilter}>
+        {filters.map((f, i) => (
+          <li key={i}>{f}</li>
+        ))}
+      </div>
       <ul className="masonry">
         {projects.map((project, i) => (
           <li key={i} className="project-card">

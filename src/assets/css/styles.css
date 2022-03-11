@@ -365,6 +365,27 @@ a:active {
 
 /* PROJECTS */
 
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.filter-list > li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-bottom: 1px dashed var(--dark);
+  transition: all 0.3s;
+}
+
+.filter-list > li:hover {
+  border-bottom: 1px dashed rgba(0,0,0,0);
+}
+
 .project-card {
   cursor: pointer;
   display: flex;
