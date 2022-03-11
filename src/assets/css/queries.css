@@ -90,7 +90,7 @@ instead, 1rem = 1em = 16px */
     column-count: 1;
   }
 
-  .project-img-box {
+  .project-card-img-container {
     height: 16rem;
   }
 
