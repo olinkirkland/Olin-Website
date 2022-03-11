@@ -138,7 +138,7 @@ const projects = [
   { name: 'altar', img: 'altar.jpg', tags: ['PlayerIO', 'C#', 'actionscript'] },
   { name: 'galaxy heist', img: 'galaxy-heist.jpg', tags: ['actionscript'] },
   { name: 'game studio', img: 'game-studio.jpg', tags: ['actionscript'] },
-  { name: 'omg', img: 'Omg.jpg', tags: ['actionscript', 'flex'] }
+  { name: 'omg', img: 'omg.jpg', tags: ['actionscript', 'flex'] }
 ];
 
 function Projects() {
@@ -154,7 +154,7 @@ function Projects() {
 
       <ul className="masonry">
         {projects.map((project, i) => (
-          <li key={i} className="hover-tile project-card">
+          <li key={i} className="project-card">
             <div className="project-card-img-container">
               <img
                 src={`${process.env.PUBLIC_URL}/projects/thumbnails/${project.img}`}
