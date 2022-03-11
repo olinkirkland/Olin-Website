@@ -1,7 +1,6 @@
-
 const projects = [
-  { name: 'realm-writer', img: 'realm-writer.jpg', big: true },
-  { name: 'woodland-stories', img: 'woodland-stories.jpg', big: true },
+  { name: 'realm-writer', img: 'realm-writer.jpg' },
+  { name: 'woodland-stories', img: 'woodland-stories.jpg' },
   { name: 'realms', img: 'realms.jpg' },
   { name: 'worlds', img: 'worlds.jpg' },
   { name: 'castle-map', img: 'castle-map.jpg' },
@@ -55,13 +54,7 @@ function Projects() {
 
       <ul className="masonry">
         {projects.map((project, index) => (
-          <li
-            key={index}
-            className={
-              'hover-tile project-card ' +
-              (project.big ? 'project-card--big' : '')
-            }
-          >
+          <li key={index} className="project-card">
             <img
               src={`${process.env.PUBLIC_URL}/projects/thumbnails/${project.img}`}
               alt={project.name}
