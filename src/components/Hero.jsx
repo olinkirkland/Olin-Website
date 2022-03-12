@@ -1,4 +1,5 @@
 import Pdf from '../assets/files/olin-kirkland-resume.pdf';
+import Social from './Social';
 
 function Hero() {
   return (
@@ -11,33 +12,7 @@ function Hero() {
         </h2>
         <p>I write front-end code and make games.</p>
         <div className="header-links">
-          <ul className="social-links">
-            <li>
-              <a href="https://github.com/olinkirkland">
-                <i className="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/olin-kirkland-10483078/">
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/olinkirkland/">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/itsOlinKirkland">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="me@olinkirk.land">
-                <i className="fas fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
+          <Social />
           <div className="resume-container">
             <a href={Pdf} target="_blank" className="btn">
               <span>My Resume</span>
