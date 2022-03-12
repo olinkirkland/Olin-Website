@@ -95,7 +95,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .project-card img {
-    height: max-content;
+    height: fit-content;
     opacity: 1;
   }
 
