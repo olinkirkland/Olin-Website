@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import udemy from '../assets/images/udemy.svg';
 // import codecademy from '../assets/img/codecademy.svg';
 
@@ -20,7 +21,7 @@ const skills = [
   'Adobe Animate'
 ];
 
-const certificates = [
+const allCertificates = [
   {
     type: udemy,
     name: 'Build Responsive Real-World Websites with HTML and CSS',
@@ -93,8 +94,19 @@ const months = [
 ];
 
 function Skills() {
+  const [certificates, setCertificates] = useState([]);
+
+  useEffect(() => {
+    // Load only first 3 certificates
+    setCertificates(allCertificates.filter((c, i) => i < 3));
+  }, []);
+
+  function onClickSeeMore() {
+    setCertificates(allCertificates);
+  }
+
   return (
-    <section className="section-skills">
+    <section id="skills" className="section-skills">
       <div className="container">
         <h2 className="text-center">
           <strong>Skills</strong> and Proficiencies
@@ -125,6 +137,14 @@ function Skills() {
             </li>
           ))}
         </ul>
+
+        {certificates.length <= 3 && (
+          <div className="see-more-container">
+            <a className="btn-secondary" onClick={onClickSeeMore}>
+              See all certificates
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

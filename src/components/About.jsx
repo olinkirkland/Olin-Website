@@ -10,14 +10,15 @@ function About() {
         <div className="intro-content">
           <h2>
             I bring a<strong> unique perspective</strong> to application design
-            through my background in<strong> museums</strong> and<strong> games</strong>.
+            through my background in<strong> museums</strong> and
+            <strong> games</strong>.
           </h2>
 
           <div className="intro-cards">
             <div className="intro-card">
-              <i className="fas fa-archway"></i>
+              <i className="fas fa-object-group"></i>
               <p>
-                I design for intuition. I built touch-screen apps for
+                I design for intuition. I have built touch-screen apps for
                 <strong> museum exhibits</strong>, developed front-end solutions
                 for security system management, and most recently worked on
                 <strong> mobile games</strong> in Cologne.
@@ -41,9 +42,9 @@ function About() {
                 I am a native<strong> English and German</strong> speaker.
                 <br />
                 <br />
-                Off screen, I like exploring new places, writing about fictional
-                worlds, hiking, and playing board games.
-              </p>1
+                Off screen, I like exploring new places, listening to podcasts,
+                reading books, and playing board games.
+              </p>
             </div>
           </div>
         </div>

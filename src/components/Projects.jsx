@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const projects = [
+const allProjects = [
   {
     name: 'realms writer',
     img: 'realms-writer.jpg',
@@ -14,27 +14,22 @@ const projects = [
   {
     name: 'realms',
     img: 'realms.jpg',
-    tags: ['actionscript', 'flex', 'procedural generation']
+    tags: ['actionscript', 'apache flex', 'procedural generation']
   },
   {
     name: 'worlds',
     img: 'worlds.jpg',
-    tags: ['actionscript', 'flex', 'procedural generation']
-  },
-  {
-    name: 'world maker',
-    img: 'world-maker-1.jpg',
-    tags: ['actionscript', 'flex', 'procedural generation']
+    tags: ['actionscript', 'apache flex', 'procedural generation']
   },
   {
     name: 'world maker',
     img: 'world-maker-2.jpg',
-    tags: ['actionscript', 'flex', 'procedural generation']
+    tags: ['actionscript', 'apache flex', 'procedural generation']
   },
   {
     name: 'castle map',
     img: 'castle-map.jpg',
-    tags: ['actionscript', 'flex', 'playerio', 'c#']
+    tags: ['actionscript', 'playerio', 'c#']
   },
   { name: 'crest designer', img: 'crest.jpg', tags: ['actionscript'] },
   {
@@ -43,14 +38,14 @@ const projects = [
     tags: ['actionscript']
   },
   {
-    name: 'energy career-quiz',
+    name: 'energy career quiz',
     img: 'energy-career-quiz.jpg',
     tags: ['actionscript']
   },
   {
     name: 'energy map',
     img: 'energy-map.jpg',
-    tags: ['actionscript', 'flex', 'arcgis']
+    tags: ['actionscript', 'apache flex', 'arcgis']
   },
   { name: 'fracking game', img: 'fracking-game.jpg', tags: ['actionscript'] },
   {
@@ -68,16 +63,7 @@ const projects = [
     img: 'hydrocarbon-info-1.jpg',
     tags: ['actionscript']
   },
-  {
-    name: 'hydrocarbon info',
-    img: 'hydrocarbon-info-2.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'hydrocarbon info',
-    img: 'hydrocarbon-info-3.jpg',
-    tags: ['actionscript']
-  },
+
   { name: 'medieval armor', img: 'medieval-armor.jpg', tags: ['actionscript'] },
   { name: 'pipeline kiosk', img: 'pipeline-kiosk.jpg', tags: ['actionscript'] },
   {
@@ -88,36 +74,6 @@ const projects = [
   {
     name: 'renewables kiosks',
     img: 'renewables-1.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-2.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-3.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-4.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-5.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-6.jpg',
-    tags: ['actionscript']
-  },
-  {
-    name: 'renewables kiosks',
-    img: 'renewables-7.jpg',
     tags: ['actionscript']
   },
   { name: 'seismic kiosks', img: 'seismic-kiosks.jpg', tags: ['actionscript'] },
@@ -140,28 +96,52 @@ const projects = [
   { name: 'altar', img: 'altar.jpg', tags: ['playerio', 'c#', 'actionscript'] },
   { name: 'galaxy heist', img: 'galaxy-heist.jpg', tags: ['actionscript'] },
   { name: 'game studio', img: 'game-studio.jpg', tags: ['actionscript'] },
-  { name: 'omg', img: 'omg.jpg', tags: ['actionscript', 'flex'] }
+  { name: 'omg', img: 'omg.jpg', tags: ['actionscript', 'apache flex'] }
 ];
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
   const [filters, setFilters] = useState([]);
+  const [currentFilter, setCurrentFilter] = useState('all');
 
   useEffect(() => {
+    // Set initial filters
     setFilters(
-      projects.reduce((accumulator, p) => {
+      allProjects.reduce((accumulator, p) => {
         if (!accumulator.includes('all')) accumulator.push('all');
         p.tags.forEach((t) => {
           if (!accumulator.includes(t)) accumulator.push(t);
         });
-
         return accumulator;
       }, [])
     );
   }, []);
 
   function onClickFilter({ target }) {
-    console.log(target);
+    const f = target.innerHTML != currentFilter ? target.innerHTML : 'all';
+    setCurrentFilter(f);
   }
+
+  useEffect(() => {
+    // Select the filter
+    document
+      .querySelectorAll(`.filter-list > li`)
+      .forEach((el) => el.classList.remove('filter-active'));
+
+    const filterEl = document.querySelector(
+      `.filter-list > li[data="${currentFilter}"]`
+    );
+    if (filterEl) filterEl.classList.add('filter-active');
+  }, [projects]);
+
+  useEffect(() => {
+    // Filter the project list
+    setProjects(
+      allProjects.filter(
+        (p) => currentFilter === 'all' || p.tags.includes(currentFilter)
+      )
+    );
+  }, [currentFilter]);
 
   return (
     <section id="projects" className="section-projects container">
@@ -170,12 +150,14 @@ function Projects() {
       </h2>
       <p className="text-center">
         My projects range from <strong>museum applications</strong>, to games,
-        to typical web fare.
+        to websites and apps.
       </p>
 
-      <div className="filter-list" onClick={onClickFilter}>
+      <div className="filter-list">
         {filters.map((f, i) => (
-          <li key={i}>{f}</li>
+          <li key={i} onClick={onClickFilter} data={f}>
+            {f}
+          </li>
         ))}
       </div>
       <ul className="masonry">

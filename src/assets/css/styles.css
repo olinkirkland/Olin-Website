@@ -150,6 +150,18 @@ a:active {
   flex-direction: column;
 }
 
+a.btn-secondary {
+  font-size: 1.6rem;
+  display: inline-block;
+  border-bottom: 1px dashed var(--dark);
+  color: var(--dark);
+  transition: all 0.3s;
+}
+
+a.btn-secondary:hover {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0);
+}
+
 /* HERO */
 
 .section-hero {
@@ -256,7 +268,7 @@ a:active {
   width: 16rem;
   height: 16rem;
   padding: 0.4rem;
-  border: 1px dashed #1864ab;
+  border: 1px solid #1864ab;
   border-radius: 50%;
 }
 
@@ -276,10 +288,8 @@ a:active {
   align-items: center;
   gap: 2rem;
   padding: 4rem 3rem;
-
   border-radius: 10px;
-  border: 1px solid #1864ab;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px;
 }
 
 .intro-card p {
@@ -288,9 +298,8 @@ a:active {
 
 .intro-card i {
   position: relative;
-  font-size: 4rem;
-  color: #1864ab;
-  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  color: var(--primary-muted);
 }
 
 /* SKILLS */
@@ -363,6 +372,12 @@ a:active {
   font-size: 1.2rem;
 }
 
+.see-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8rem;
+}
+
 /* PROJECTS */
 
 .filter-list {
@@ -371,9 +386,12 @@ a:active {
   justify-content: center;
   margin-bottom: 1rem;
   gap: 1rem;
+  transition: all 1s;
 }
 
 .filter-list > li {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   list-style: none;
   font-size: 1.4rem;
@@ -383,7 +401,15 @@ a:active {
 }
 
 .filter-list > li:hover {
-  border-bottom: 1px dashed rgba(0,0,0,0);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0);
+}
+
+li.filter-active {
+  border-bottom: 1px solid var(--dark);
+}
+
+li.filter-active:hover {
+  border-bottom: 1px solid var(--dark);
 }
 
 .project-card {
@@ -416,13 +442,14 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
 
-  opacity: 0;
+  /* Overlay */
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
   transition: all 0.3s;
 }
 
 .project-card:hover .project-card-body {
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
+  opacity: 0;
 }
 
 .project-card p {
