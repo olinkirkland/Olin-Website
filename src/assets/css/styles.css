@@ -153,8 +153,8 @@ a:active {
 a.btn-secondary {
   font-size: 1.6rem;
   display: inline-block;
-  border-bottom: 1px dashed var(--dark);
-  color: var(--dark);
+  border-bottom: 1px dashed var(--dark-muted);
+  color: var(--dark-muted);
   transition: all 0.3s;
 }
 
