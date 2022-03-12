@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react';
 
 const allProjects = [
   {
+    name: 'portfolio',
+    img: 'portfolio.jpg',
+    tags: ['html', 'css', 'javascript', 'react']
+  },
+  {
     name: 'realms writer',
     img: 'realms-writer.jpg',
     tags: ['html', 'css', 'typescript', 'procedural generation']
@@ -106,15 +111,22 @@ function Projects() {
 
   useEffect(() => {
     // Set initial filters
-    setFilters(
-      allProjects.reduce((accumulator, p) => {
-        if (!accumulator.includes('all')) accumulator.push('all');
-        p.tags.forEach((t) => {
-          if (!accumulator.includes(t)) accumulator.push(t);
-        });
-        return accumulator;
-      }, [])
-    );
+    let filterCounts = allProjects.reduce((accumulator, p) => {
+      p.tags.forEach((t) => {
+        if (!accumulator.hasOwnProperty(t)) accumulator[t] = 0;
+        accumulator[t]++;
+      });
+      return accumulator;
+    }, {});
+
+    // Only allow the user to filter by tags that appear at least twice
+    let arr = [];
+    Object.keys(filterCounts).forEach((key) => {
+      if (filterCounts[key] > 1) arr.push(key);
+    });
+
+    arr.unshift('all');
+    setFilters(arr);
   }, []);
 
   function onClickFilter({ target }) {
