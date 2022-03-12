@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5defcd90.css",
-    "main.js": "/static/js/main.9dd2d8a5.js",
+    "main.css": "/static/css/main.23b5fcb8.css",
+    "main.js": "/static/js/main.62c0c5e0.js",
     "static/media/splash.jpg": "/static/media/splash.d7fc1e246f39ce3c0d57.jpg",
     "static/media/olin-kirkland-resume.pdf": "/static/media/olin-kirkland-resume.28719ce10da7073f22a6.pdf",
     "static/media/portrait.jpg": "/static/media/portrait.83be18d8c071ab8a6f9a.jpg",
     "index.html": "/index.html",
     "static/media/udemy.svg": "/static/media/udemy.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
-    "main.5defcd90.css.map": "/static/css/main.5defcd90.css.map",
-    "main.9dd2d8a5.js.map": "/static/js/main.9dd2d8a5.js.map"
+    "main.23b5fcb8.css.map": "/static/css/main.23b5fcb8.css.map",
+    "main.62c0c5e0.js.map": "/static/js/main.62c0c5e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5defcd90.css",
-    "static/js/main.9dd2d8a5.js"
+    "static/css/main.23b5fcb8.css",
+    "static/js/main.62c0c5e0.js"
   ]
 }
