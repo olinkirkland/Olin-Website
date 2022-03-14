@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react';
 
 const allProjects = [
   {
+    name: 'ip finder',
+    img: 'ip-finder.jpg',
+    tags: ['html', 'css', 'javascript', 'react']
+  },
+  {
     name: 'portfolio',
     img: 'portfolio.jpg',
     tags: ['html', 'css', 'javascript', 'react']
