@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react';
 
 const allProjects = [
   {
+    name: 'meme factory',
+    img: 'meme-factory.jpg',
+    tags: ['html', 'css', 'javascript', 'react']
+  },
+  {
     name: 'ip finder',
     img: 'ip-finder.jpg',
     tags: ['html', 'css', 'javascript', 'react']
