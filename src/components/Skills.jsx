@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import udemy from '../assets/images/udemy.svg';
+import wbs from '../assets/images/wbs.png';
+import wbsCertificatePdf from '../assets/files/wbs-fullstack-certificate.pdf';
 // import codecademy from '../assets/img/codecademy.svg';
 
 const skills = [
@@ -21,7 +23,7 @@ const skills = [
   'Adobe Animate'
 ];
 
-const allCertificates = [
+let allCertificates = [
   {
     type: udemy,
     name: 'Build Responsive Real-World Websites with HTML and CSS',
@@ -75,6 +77,15 @@ const allCertificates = [
       year: 2022
     },
     url: 'https://www.udemy.com/certificate/UC-333d8dd1-c9d9-4a23-a6a6-7b8e17daff08/'
+  },
+  {
+    type: wbs,
+    name: 'Full Stack Web & App Development Bootcamp',
+    date: {
+      month: 4,
+      year: 2022
+    },
+    file: wbsCertificatePdf
   }
 ];
 
@@ -97,7 +108,19 @@ function Skills() {
   const [certificates, setCertificates] = useState([]);
 
   useEffect(() => {
-    // Load only first 3 certificates
+    // Sort certificates by date
+    allCertificates = allCertificates.sort((a, b) => {
+      if (a.date.year < b.date.year) {
+        return 1;
+      } else if (a.date.year > b.date.year) {
+        return -1;
+      } else if (a.date.month < b.date.month) {
+        return 1;
+      }
+      return -1;
+    });
+
+    // Collapse to show only first 3 certificates
     setCertificates(allCertificates.filter((c, i) => i < 3));
   }, []);
 
@@ -125,7 +148,10 @@ function Skills() {
         <ul className="certificates-list">
           {certificates.map((certificate, index) => (
             <li key={index} className="certificate-card hover-tile" href="">
-              <a href={certificate.url} target="_blank">
+              <a
+                href={certificate.url ? certificate.url : certificate.file}
+                target="_blank" rel="noreferrer"
+              >
                 <div className="certificate-header">
                   <img src={certificate.type} alt="Udemy logo" />
                   <p className="certificate-name">{certificate.name}</p>

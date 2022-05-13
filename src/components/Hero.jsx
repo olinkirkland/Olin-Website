@@ -1,4 +1,4 @@
-import Pdf from '../assets/files/olin-kirkland-resume.pdf';
+import resumePdf from '../assets/files/olin-kirkland-resume.pdf';
 import Social from './Social';
 
 function Hero() {
@@ -14,12 +14,12 @@ function Hero() {
         <div className="header-links">
           <Social />
           <div className="resume-container">
-            <a href={Pdf} target="_blank" className="btn">
+            <a href={resumePdf} target="_blank" className="btn" rel="noreferrer">
               <span>My Resume</span>
             </a>
             <a
               className="resume-download"
-              href={Pdf}
+              href={resumePdf}
               download="olin-kirkland-resume.pdf"
             >
               <i className="fas fa-download"></i>
