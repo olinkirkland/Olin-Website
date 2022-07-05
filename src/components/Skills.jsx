@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import udemy from '../assets/images/udemy.svg';
 import wbs from '../assets/images/wbs.png';
+import abt from '../assets/images/abt.png';
 import wbsCertificatePdf from '../assets/files/wbs-fullstack-certificate.pdf';
-// import codecademy from '../assets/img/codecademy.svg';
+import abtCertificatePdf from '../assets/files/abt-user-essentials.pdf';
 
 const skills = [
   'JavaScript',
@@ -86,6 +87,15 @@ let allCertificates = [
       year: 2022
     },
     file: wbsCertificatePdf
+  },
+  {
+    type: abt,
+    name: 'AB Tasty User Essentials',
+    date: {
+      month: 7,
+      year: 2022
+    },
+    file: abtCertificatePdf
   }
 ];
 
@@ -150,7 +160,8 @@ function Skills() {
             <li key={index} className="certificate-card hover-tile" href="">
               <a
                 href={certificate.url ? certificate.url : certificate.file}
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <div className="certificate-header">
                   <img src={certificate.type} alt="Udemy logo" />
