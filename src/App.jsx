@@ -1,9 +1,9 @@
 import './assets/css/styles.css';
 import './assets/css/queries.css';
 import About from './components/About';
+import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <>
       <Hero />
       <About />
-      <hr />
+      <CallToActionBanner />
       <Skills />
-      <hr />
-      <Projects />
+      {/* <hr /> */}
+      {/* <Projects /> */}
       <Footer />
     </>
   );

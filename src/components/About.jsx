@@ -4,9 +4,9 @@ function About() {
   return (
     <section id="about" className="section-about-me">
       <div className="container intro">
-        <div className="intro-image">
+        {/* <div className="intro-image">
           <img src={portrait} alt="Olin Kirkland" />
-        </div>
+        </div> */}
         <div className="intro-content">
           <h2>
             I bring a<strong> unique perspective</strong> to application design

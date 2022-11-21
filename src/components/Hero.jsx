@@ -14,7 +14,12 @@ function Hero() {
         <div className="header-links">
           <Social />
           <div className="resume-container">
-            <a href={resumePdf} target="_blank" className="btn" rel="noreferrer">
+            <a
+              href={resumePdf}
+              target="_blank"
+              className="btn"
+              rel="noreferrer"
+            >
               <span>My Resume</span>
             </a>
             <a
@@ -22,7 +27,7 @@ function Hero() {
               href={resumePdf}
               download="olin-kirkland-resume.pdf"
             >
-              <i className="fas fa-download"></i>
+              <i className="fas fa-file-download"></i>
             </a>
           </div>
         </div>

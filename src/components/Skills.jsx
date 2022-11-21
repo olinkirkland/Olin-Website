@@ -176,11 +176,13 @@ function Skills() {
         </ul>
 
         {certificates.length <= 3 && (
-          <div className="see-more-container">
-            <a className="btn-secondary" onClick={onClickSeeMore}>
-              See all certificates
-            </a>
-          </div>
+          <button
+            className="btn btn-alt btn-see-more"
+            href="#"
+            onClick={onClickSeeMore}
+          >
+            <span>All certificates</span>
+          </button>
         )}
       </div>
     </section>
