@@ -1,12 +1,12 @@
-import './assets/css/styles.css';
+import mixpanel from 'mixpanel-browser';
+import { useEffect } from 'react';
 import './assets/css/queries.css';
+import './assets/css/styles.css';
 import About from './components/About';
 import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
-import { useEffect } from 'react';
-import mixpanel from 'mixpanel-browser';
 
 const MIXPANEL_TOKEN = '804056956bf1195939b17e5f559fad89';
 
@@ -21,7 +21,8 @@ function App() {
       },
       error: (err) => {
         console.log('Mixpanel error', err);
-      }
+      },
+      api_host: 'https://api.mixpanel.com'
     });
 
     // Track page view (mixpanel)
