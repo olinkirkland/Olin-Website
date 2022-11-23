@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     // Track page view (mixpanel)
     mixpanel.init('804056956bf1195939b17e5f559fad89', {
-      api_host: 'https://api-eu.mixpanel.com/track',
+      api_host: 'https://api.mixpanel.com/',
       debug: true
     });
     setTimeout(() => {
@@ -20,7 +20,7 @@ function App() {
         url: window.location.href,
         referrer: document.referrer
       });
-    }, 1000);
+    }, 10000);
   }, []);
 
   return (
