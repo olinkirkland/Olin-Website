@@ -22,22 +22,14 @@ function App() {
       error: (err) => {
         console.log('Mixpanel error', err);
       },
-      api_host: 'https://api.mixpanel.com'
+      api_host: 'https://api-eu.mixpanel.com'
     });
-
-    // Track page view (mixpanel)
-    // mixpanel.init('804056956bf1195939b17e5f559fad89', {
-    //   api_host: 'https://api-eu.mixpanel.com/track',
-    //   debug: true,
-    //   loaded: function (mixpanel) {
-    //     console.log('Mixpanel loaded');
-    //     mixpanel.track('Page View', {
-    //       url: window.location.href,
-    //       referrer: document.referrer
-    //     });
-    //   }
-    // });
   }, []);
+
+  // mixpanel.track('Page View', {
+  //       url: window.location.href,
+  //       referrer: document.referrer
+  //     });
 
   return (
     <>
