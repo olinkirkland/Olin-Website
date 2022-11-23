@@ -14,22 +14,18 @@ function App() {
   useEffect(() => {
     mixpanel.init(MIXPANEL_TOKEN, {
       debug: true,
-      loaded: (m) => {
-        console.log('Mixpanel loaded');
-        console.log(m);
-        m.track('test');
+      loaded: () => {
+        mixpanel.track('Page View', {
+          url: window.location.href,
+          referrer: document.referrer
+        });
       },
       error: (err) => {
-        console.log('Mixpanel error', err);
+        console.error(err);
       },
       api_host: 'https://api-eu.mixpanel.com'
     });
   }, []);
-
-  // mixpanel.track('Page View', {
-  //       url: window.location.href,
-  //       referrer: document.referrer
-  //     });
 
   return (
     <>
