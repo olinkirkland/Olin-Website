@@ -5,8 +5,19 @@ import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import { useEffect } from 'react';
+import mixpanel from 'mixpanel-browser';
 
 function App() {
+  useEffect(() => {
+    // Track page view (mixpanel)
+    mixpanel.init('804056956bf1195939b17e5f559fad89');
+    mixpanel.track('Page View', {
+      url: window.location.href,
+      referrer: document.referrer
+    });
+  }, []);
+
   return (
     <>
       <Hero />
