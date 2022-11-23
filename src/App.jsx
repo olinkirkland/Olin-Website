@@ -1,7 +1,7 @@
 import mixpanel from 'mixpanel-browser';
 import { useEffect } from 'react';
-import './assets/css/queries.css';
 import './assets/css/styles.css';
+import './assets/css/queries.css';
 import About from './components/About';
 import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
