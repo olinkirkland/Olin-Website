@@ -130,13 +130,16 @@ function Skills() {
       return -1;
     });
 
-    // Collapse to show only first 3 certificates
-    setCertificates(allCertificates.filter((c, i) => i < 3));
+    // // Collapse to show only first 3 certificates
+    // setCertificates(allCertificates.filter((c, i) => i < 3));
+
+    // Show all certificates
+    setCertificates(allCertificates);
   }, []);
 
-  function onClickSeeMore() {
-    setCertificates(allCertificates);
-  }
+  // function onClickSeeMore() {
+  //   setCertificates(allCertificates);
+  // }
 
   return (
     <section id="skills" className="section-skills">
@@ -175,7 +178,7 @@ function Skills() {
           ))}
         </ul>
 
-        {certificates.length <= 3 && (
+        {/* {certificates.length <= 3 && (
           <button
             className="btn btn-alt btn-see-more"
             href="#"
@@ -183,7 +186,7 @@ function Skills() {
           >
             <span>All certificates</span>
           </button>
-        )}
+        )} */}
       </div>
     </section>
   );
