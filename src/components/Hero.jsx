@@ -35,8 +35,8 @@ function Hero() {
 
       <div className="scroll-prompt">
         <a href="#about" className="btn btn--scroll">
-          <span>Scroll</span>
-          <i className="fas fa-arrow-down"></i>
+          <span>Scroll down</span>
+          <i className="fas fa-mouse"></i>
         </a>
       </div>
     </section>

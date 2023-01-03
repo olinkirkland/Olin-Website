@@ -133,9 +133,7 @@ a:active {
   color: var(--light);
   background-color: transparent;
   padding: 1rem 2rem;
-  /* border-radius: 50px; */
   cursor: pointer;
-  /* font-weight: bold; */
   letter-spacing: 2px;
   text-transform: uppercase;
   gap: 1rem;
@@ -144,8 +142,7 @@ a:active {
 
 .btn:hover,
 .btn:active {
-  background-color: var(--light);
-  color: var(--primary);
+  background-color: #ffffff20;
 }
 
 .btn,
@@ -173,8 +170,9 @@ a:active {
   justify-content: center;
 
   background: linear-gradient(rgba(255, 63, 63, 0.3), rgba(84, 54, 255, 0.3)),
-    url(../images/splash.jpg);
-  background-position-y: bottom;
+    url(../images/splash.avif);
+
+  background-position-y: top;
   object-fit: cover;
   background-size: cover;
 
@@ -188,6 +186,7 @@ a:active {
   color: #f8f8f8;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 4rem 6rem;
+  backdrop-filter: blur(10px);
 }
 
 .section-hero h1 {

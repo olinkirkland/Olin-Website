@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <Social />
-      <p>&copy; 2021 by Olin Kirkland</p>
+      <p>&copy; {new Date().getFullYear()} Olin Kirkland</p>
     </footer>
   );
 }
