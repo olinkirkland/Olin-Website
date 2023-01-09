@@ -3,8 +3,10 @@ import Social from './Social';
 function Footer() {
   return (
     <footer>
-      <Social />
-      <p>&copy; {new Date().getFullYear()} Olin Kirkland</p>
+      <div className="footer-content">
+        <Social />
+        <p>&copy; {new Date().getFullYear()} Olin Kirkland</p>
+      </div>
     </footer>
   );
 }
