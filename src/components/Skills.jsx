@@ -10,7 +10,10 @@ const skills = [
   'TypeScript',
   'HTML',
   'CSS',
+  'SCSS',
   'React',
+  'Node',
+  'JSON',
   'Bootstrap',
   'Tailwind',
   'XML',
@@ -148,7 +151,7 @@ function Skills() {
           <strong>Skills</strong> and Proficiencies
         </h2>
         <p className="text-center">
-          I have over<strong> 7 years</strong> of front-end design and
+          I have over<strong> 8 years</strong> of professional software
           development experience.
         </p>
         <ul className="skills-list">

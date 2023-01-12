@@ -10,7 +10,7 @@ function Hero() {
           I'm a German-American web developer living and working in Cologne,
           Germany.
         </h2>
-        <p>I write front-end code and make games.</p>
+        <p>I write full-stack code for web-apps and games.</p>
         <div className="header-links">
           <Social />
           <div className="resume-container">

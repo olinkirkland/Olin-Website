@@ -4,9 +4,6 @@ function About() {
   return (
     <section id="about" className="section-about-me">
       <div className="container intro">
-        {/* <div className="intro-image">
-          <img src={portrait} alt="Olin Kirkland" />
-        </div> */}
         <div className="intro-content">
           <h2>
             I bring a<strong> unique perspective</strong> to application design
@@ -18,32 +15,30 @@ function About() {
             <div className="intro-card">
               <i className="fas fa-object-group"></i>
               <p>
-                I design for intuition. I have built touch-screen apps for
-                <strong> museum exhibits</strong>, developed front-end solutions
-                for security system management, and most recently worked on
-                <strong> mobile games</strong> in Cologne.
+                I specialize in creating intuitive user experiences. I have
+                experience with mobile, web and desktop development, having
+                worked on projects ranging from museum exhibitions to security
+                system management and mobile games .
               </p>
             </div>
 
             <div className="intro-card">
               <i className="fas fa-code"></i>
               <p>
-                Agnostic of platform, I'm dedicated to developing software that
-                adheres to best practices and<strong> design patterns</strong>.
-                My tech stack includes modern technologies like HTML/CSS,
-                JavaScript, and<strong> TypeScript</strong>. In the past, I
-                worked extensively in Apache Flex and ActionScript.
+                My tech stack includes HTML/CSS, JavaScript, TypeScript and
+                Apache Flex/ActionScript. I'm also familiar with React, Node.js,
+                and MongoDB.
+                <br />
+                <br />I am a native English and German speaker.
               </p>
             </div>
 
             <div className="intro-card">
               <i className="fas fa-globe-americas"></i>
               <p>
-                I am a native<strong> English and German</strong> speaker.
-                <br />
-                <br />
-                Off screen, I like exploring new places, listening to podcasts,
-                reading books, and playing board games.
+                In my free time, I like going running, exploring new places and
+                trying new foods, listening to podcasts, and playing board
+                games.
               </p>
             </div>
           </div>
