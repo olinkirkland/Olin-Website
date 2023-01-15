@@ -71,7 +71,6 @@ hr {
 button.btn-icon {
   gap: 1rem;
   border: none;
-  aspect-ratio: 1;
 }
 
 /* MASONRY */
@@ -208,6 +207,7 @@ a:active {
   font-size: 2rem;
   margin-bottom: 4.8rem;
   letter-spacing: 0.6px;
+  color: var(--light-muted);
 }
 
 .header-links {
