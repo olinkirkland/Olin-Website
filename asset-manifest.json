@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.e481bbad.css",
-    "main.js": "/static/js/main.2d27b7a0.js",
+    "main.js": "/static/js/main.d747a0ec.js",
     "static/media/wbs-fullstack-certificate.pdf": "/static/media/wbs-fullstack-certificate.df6496d78e1630e89f56.pdf",
-    "static/media/olin-kirkland-resume.pdf": "/static/media/olin-kirkland-resume.5ef945b508b58b321a56.pdf",
     "static/media/splash.avif": "/static/media/splash.2c8e47282fca0dcc4979.avif",
     "static/media/abt-user-essentials.pdf": "/static/media/abt-user-essentials.4823168f6307bed915d1.pdf",
     "static/media/portrait.jpg": "/static/media/portrait.83be18d8c071ab8a6f9a.jpg",
+    "static/media/olin-kirkland-resume-de.pdf": "/static/media/olin-kirkland-resume-de.3bc88f6c3fda7b62d7ee.pdf",
+    "static/media/olin-kirkland-resume-en.pdf": "/static/media/olin-kirkland-resume-en.0d7142801e910623959f.pdf",
     "static/media/abstract-texture.png": "/static/media/abstract-texture.79000482fe8acfa2e99c.png",
     "static/media/abt.png": "/static/media/abt.99b07f3023e8170bb238.png",
     "index.html": "/index.html",
     "static/media/udemy.svg": "/static/media/udemy.a5a9f8a55eb6b3bbc89a8f70358a365c.svg",
     "main.e481bbad.css.map": "/static/css/main.e481bbad.css.map",
-    "main.2d27b7a0.js.map": "/static/js/main.2d27b7a0.js.map"
+    "main.d747a0ec.js.map": "/static/js/main.d747a0ec.js.map"
   },
   "entrypoints": [
     "static/css/main.e481bbad.css",
-    "static/js/main.2d27b7a0.js"
+    "static/js/main.d747a0ec.js"
   ]
 }
