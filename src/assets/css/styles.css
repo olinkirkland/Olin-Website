@@ -25,10 +25,10 @@ html {
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Outfit', sans-serif;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
   background-color: var(--light-muted);
   color: var(--dark);
 }
