@@ -35,10 +35,18 @@ function Hero() {
       </div>
 
       <div className="scroll-prompt">
-        <a href="#about" className="btn btn--scroll">
+        <button
+          className="btn btn--scroll"
+          onClick={() => {
+            // Scroll until #about is at the top of the viewport
+            document
+              .querySelector('#about')
+              .scrollIntoView({ behavior: 'smooth' });
+          }}
+        >
           <span>{text('hero.btn-scroll')}</span>
           <i className="fas fa-mouse"></i>
-        </a>
+        </button>
       </div>
     </section>
   );
