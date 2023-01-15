@@ -1,10 +1,17 @@
-import resumePdf from '../assets/files/olin-kirkland-resume.pdf';
-import { text } from '../locale/locale';
+import resumePdfEn from '../assets/files/olin-kirkland-resume-en.pdf';
+import resumePdfDe from '../assets/files/olin-kirkland-resume-de.pdf';
+import { currentLanguage, text } from '../locale/locale';
 
 function CallToActionBanner() {
+  const resumePdf = currentLanguage === 'en' ? resumePdfEn : resumePdfDe;
+
   return (
     <div className="banner banner-call-to-action">
-      <a className="btn" href={resumePdf} download="olin-kirkland-resume.pdf">
+      <a
+        className="btn"
+        href={resumePdf}
+        download={'olin-kirkland-resume-' + currentLanguage + '.pdf'}
+      >
         <i className="fas fa-file-download"></i>
         <span>{text('cta-banner.btn-my-resume')}</span>
       </a>

@@ -1,8 +1,11 @@
-import resumePdf from '../assets/files/olin-kirkland-resume.pdf';
-import { text } from '../locale/locale';
+import resumePdfEn from '../assets/files/olin-kirkland-resume-en.pdf';
+import resumePdfDe from '../assets/files/olin-kirkland-resume-de.pdf';
+import { currentLanguage, text } from '../locale/locale';
 import Social from './Social';
 
 function Hero() {
+  const resumePdf = currentLanguage === 'en' ? resumePdfEn : resumePdfDe;
+
   return (
     <section className="section-hero">
       <div className="header-content">
@@ -23,7 +26,7 @@ function Hero() {
             <a
               className="resume-download"
               href={resumePdf}
-              download="olin-kirkland-resume.pdf"
+              download={'olin-kirkland-resume-' + currentLanguage + '.pdf'}
             >
               <i className="fas fa-file-download"></i>
             </a>
