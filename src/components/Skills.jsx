@@ -1,33 +1,34 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import abtCertificatePdf from '../assets/files/abt-user-essentials.pdf';
+import wbsCertificatePdf from '../assets/files/wbs-fullstack-certificate.pdf';
+import abt from '../assets/images/abt.png';
 import udemy from '../assets/images/udemy.svg';
 import wbs from '../assets/images/wbs.png';
-import abt from '../assets/images/abt.png';
-import wbsCertificatePdf from '../assets/files/wbs-fullstack-certificate.pdf';
-import abtCertificatePdf from '../assets/files/abt-user-essentials.pdf';
+import { text } from '../locale/locale';
 
 const skills = [
-  'JavaScript',
-  'TypeScript',
-  'HTML',
-  'CSS',
-  'SCSS',
-  'React',
-  'Node',
-  'JSON',
-  'Bootstrap',
-  'Tailwind',
-  'XML',
-  'Git',
-  'Figma',
-  'English',
-  'German',
-  'Haxe',
-  'ActionScript',
-  'Apache Flex',
-  'Adobe Animate'
+  text('skills.badges.badge-1'),
+  text('skills.badges.badge-2'),
+  text('skills.badges.badge-3'),
+  text('skills.badges.badge-4'),
+  text('skills.badges.badge-5'),
+  text('skills.badges.badge-6'),
+  text('skills.badges.badge-7'),
+  text('skills.badges.badge-8'),
+  text('skills.badges.badge-9'),
+  text('skills.badges.badge-10'),
+  text('skills.badges.badge-11'),
+  text('skills.badges.badge-12'),
+  text('skills.badges.badge-13'),
+  text('skills.badges.badge-14'),
+  text('skills.badges.badge-15'),
+  text('skills.badges.badge-16'),
+  text('skills.badges.badge-17'),
+  text('skills.badges.badge-18'),
+  text('skills.badges.badge-19')
 ];
 
-let allCertificates = [
+let certificates = [
   {
     type: udemy,
     name: 'Build Responsive Real-World Websites with HTML and CSS',
@@ -103,26 +104,24 @@ let allCertificates = [
 ];
 
 const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
+  text('general.months.month-1'),
+  text('general.months.month-2'),
+  text('general.months.month-3'),
+  text('general.months.month-4'),
+  text('general.months.month-5'),
+  text('general.months.month-6'),
+  text('general.months.month-7'),
+  text('general.months.month-8'),
+  text('general.months.month-9'),
+  text('general.months.month-10'),
+  text('general.months.month-11'),
+  text('general.months.month-12')
 ];
 
 function Skills() {
-  const [certificates, setCertificates] = useState([]);
-
   useEffect(() => {
     // Sort certificates by date
-    allCertificates = allCertificates.sort((a, b) => {
+    certificates = certificates.sort((a, b) => {
       if (a.date.year < b.date.year) {
         return 1;
       } else if (a.date.year > b.date.year) {
@@ -132,28 +131,21 @@ function Skills() {
       }
       return -1;
     });
-
-    // // Collapse to show only first 3 certificates
-    // setCertificates(allCertificates.filter((c, i) => i < 3));
-
-    // Show all certificates
-    setCertificates(allCertificates);
   }, []);
-
-  // function onClickSeeMore() {
-  //   setCertificates(allCertificates);
-  // }
 
   return (
     <section id="skills" className="section-skills">
       <div className="container">
-        <h2 className="text-center">
-          <strong>Skills</strong> and Proficiencies
-        </h2>
-        <p className="text-center">
-          I have over<strong> 8 years</strong> of professional software
-          development experience.
-        </p>
+        <h2
+          className="text-center"
+          dangerouslySetInnerHTML={{ __html: text('skills.heading') }}
+        ></h2>
+        <p
+          className="text-center"
+          dangerouslySetInnerHTML={{
+            __html: text('skills.subheading', new Date().getFullYear() - 2015)
+          }}
+        ></p>
         <ul className="skills-list">
           {skills.map((skill, index) => (
             <li key={index} className="badge">
@@ -180,16 +172,6 @@ function Skills() {
             </li>
           ))}
         </ul>
-
-        {/* {certificates.length <= 3 && (
-          <button
-            className="btn btn-alt btn-see-more"
-            href="#"
-            onClick={onClickSeeMore}
-          >
-            <span>All certificates</span>
-          </button>
-        )} */}
       </div>
     </section>
   );

@@ -18,7 +18,11 @@ export function setAppLanguage(value) {
 
 export function text(path, ...args) {
   if (!translations) initializeAppLanguage();
-  const value = path.split('.').reduce((acc, curr) => acc[curr], translations);
+  let value;
+  try {
+    value = path.split('.').reduce((acc, curr) => acc[curr], translations);
+  } catch (e) {}
+  
   if (!value) {
     console.error(`No translation found for path '${path}'`);
     return `[${path}]`;

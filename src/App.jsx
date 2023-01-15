@@ -7,6 +7,7 @@ import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import LanguagePicker from './components/LanguagePicker';
 
 const MIXPANEL_TOKEN = '804056956bf1195939b17e5f559fad89';
 
@@ -29,11 +30,11 @@ function App() {
 
   return (
     <>
+      <LanguagePicker />
       <Hero />
       <About />
       <CallToActionBanner />
       <Skills />
-      {/* <hr /> */}
       {/* <Projects /> */}
       <Footer />
     </>

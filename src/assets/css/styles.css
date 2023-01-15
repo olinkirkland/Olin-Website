@@ -68,6 +68,12 @@ hr {
   text-align: center;
 }
 
+button.btn-icon {
+  gap: 1rem;
+  border: none;
+  aspect-ratio: 1;
+}
+
 /* MASONRY */
 
 ul.masonry {
@@ -144,7 +150,6 @@ a:active {
   background-color: #ffffff20;
 }
 
-.btn,
 .btn-alt:link,
 .btn-alt:visited {
   border: 1px solid var(--primary);
@@ -524,4 +529,37 @@ footer .social-links {
 footer p {
   margin: 0;
   letter-spacing: 0.8px;
+}
+
+/* LANGUAGE PICKER */
+
+.language-picker {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  gap: 1.2rem;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.language-picker button.btn-looking-for {
+  border: none;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+.language-picker button.btn-looking-for > img {
+  height: 2rem;
+  margin-right: 0.8rem;
+}
+
+.language-picker > .btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
 }
