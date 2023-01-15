@@ -61,7 +61,7 @@
     }
   },
   "language-picker": {
-    "looking-for": "Looking for the %% version?",
+    "looking-for": "View this page in %%",
     "languages": {
       "en": "English",
       "de": "German"

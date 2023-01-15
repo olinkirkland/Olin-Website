@@ -69,6 +69,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .header-content {
+    margin-top: 1.2rem;
     background-color: transparent;
     padding: 4rem;
     width: 100%;
@@ -77,10 +78,12 @@ instead, 1rem = 1em = 16px */
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 60vh;
   }
 
   .header-content > h2 {
     max-width: 48rem;
+    display: none;
   }
 
   .resume-download {
@@ -128,5 +131,9 @@ instead, 1rem = 1em = 16px */
 
   .tag-container {
     justify-content: center;
+  }
+
+  footer > .footer-content {
+    padding: 3.2rem 4rem;
   }
 }

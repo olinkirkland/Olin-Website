@@ -6,8 +6,8 @@ import About from './components/About';
 import CallToActionBanner from './components/CallToActionBanner';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Skills from './components/Skills';
 import LanguagePicker from './components/LanguagePicker';
+import Skills from './components/Skills';
 
 const MIXPANEL_TOKEN = '804056956bf1195939b17e5f559fad89';
 

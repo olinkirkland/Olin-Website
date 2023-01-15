@@ -1,1 +1,70 @@
-{}
+{
+  "hero": {
+    "title": "Hallo, ich bin Olin.",
+    "subtitle": "Ich bin ein deutsch-amerikanischer Webentwickler, der in Köln, Deutschland, lebt und arbeitet.",
+    "tagline": "Ich schreibe Full-Stack-Code für Web-Apps und Spiele.",
+    "btn-my-resume": "Mein Lebenslauf",
+    "btn-scroll": "Runterscrollen"
+  },
+  "about": {
+    "heading": "Ich bringe <strong>eine einzigartige Perspektive</strong> auf die Anwendungsgestaltung durch meine Erfahrung in <strong>Museen</strong> und <strong>Spielen</strong>.",
+    "cards": {
+      "card-1": "Ich spezialisiere mich auf die Erstellung intuitiver Benutzererfahrungen. Ich habe Erfahrung mit mobilen, Web- und Desktop-Entwicklungen und habe eine Geschichte von Projekten mit <strong>Museumsexponaten</strong> bis hin zur Verwaltung von Sicherheitssystemen und <strong>mobilen Spielen</strong>.",
+      "card-2": "Mein Tech-Stack umfasst HTML/CSS, JavaScript, <strong>TypeScript</strong> und Apache Flex/ActionScript. Ich bin auch mit React, Node.js und MongoDB vertraut. <br /><br /> Ich bin Muttersprachler in Englisch und Deutsch.",
+      "card-3": "Die Bewegung von Pixeln ist mein Beruf, aber es gibt mehr, was mich antreibt. <br /><br /> In meiner Freizeit mag ich joggen, neue Orte entdecken und verschiedene Küchen probieren, Podcasts hören und Brettspiele spielen."
+    }
+  },
+  "cta-banner": {
+    "btn-my-resume": "Mein Lebenslauf",
+    "btn-connect-on-linkedin": "Auf LinkedIn verbinden",
+    "btn-contact-me": "Kontaktieren Sie mich"
+  },
+  "skills": {
+    "heading": "<strong>Fähigkeiten</strong> und Kompetenzen",
+    "subheading": "Ich habe über <strong>%% Jahre</strong> professionelle Softwareentwicklungserfahrung.",
+    "badges": {
+      "badge-1": "JavaScript",
+      "badge-2": "TypeScript",
+      "badge-3": "HTML",
+      "badge-4": "CSS",
+      "badge-5": "SCSS",
+      "badge-6": "React",
+      "badge-7": "Node",
+      "badge-8": "JSON",
+      "badge-9": "Bootstrap",
+      "badge-10": "Tailwind",
+      "badge-11": "XML",
+      "badge-12": "Git",
+      "badge-13": "Figma",
+      "badge-14": "Englisch",
+      "badge-15": "Deutsch",
+      "badge-16": "Haxe",
+      "badge-17": "ActionScript",
+      "badge-18": "Apache Flex",
+      "badge-19": "Adobe Animate"
+    }
+  },
+  "general": {
+    "months": {
+      "month-1": "Januar",
+      "month-2": "Februar",
+      "month-3": "März",
+      "month-4": "April",
+      "month-5": "Mai",
+      "month-6": "Juni",
+      "month-7": "Juli",
+      "month-8": "August",
+      "month-9": "September",
+      "month-10": "Oktober",
+      "month-11": "November",
+      "month-12": "Dezember"
+    }
+  },
+  "language-picker": {
+    "looking-for": "Zur %% Seite wechseln",
+    "languages": {
+      "en": "Englischen",
+      "de": "Deutschen"
+    }
+  }
+}
