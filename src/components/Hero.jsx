@@ -1,16 +1,14 @@
 import resumePdf from '../assets/files/olin-kirkland-resume.pdf';
+import { text } from '../locale/locale';
 import Social from './Social';
 
 function Hero() {
   return (
     <section className="section-hero">
       <div className="header-content">
-        <h1>Hi, I'm Olin.</h1>
-        <h2>
-          I'm a German-American web developer living and working in Cologne,
-          Germany.
-        </h2>
-        <p>I write full-stack code for web-apps and games.</p>
+        <h1>{text('hero.title')}</h1>
+        <h2>{text('hero.subtitle')}</h2>
+        <p>{text('hero.tagline')}</p>
         <div className="header-links">
           <Social />
           <div className="resume-container">
@@ -20,7 +18,7 @@ function Hero() {
               className="btn"
               rel="noreferrer"
             >
-              <span>My Resume</span>
+              <span>{text('hero.btn-my-resume')}</span>
             </a>
             <a
               className="resume-download"
@@ -35,7 +33,7 @@ function Hero() {
 
       <div className="scroll-prompt">
         <a href="#about" className="btn btn--scroll">
-          <span>Scroll down</span>
+          <span>{text('hero.btn-scroll')}</span>
           <i className="fas fa-mouse"></i>
         </a>
       </div>

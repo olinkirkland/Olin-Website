@@ -13,18 +13,18 @@ export function setAppLanguage(value) {
   currentLanguage = value;
   localStorage.setItem('language', value);
   if (value === 'en') translations = en;
-  if (value === 'de') translations = de;
+  else if (value === 'de') translations = de;
 }
 
-export function text(key, ...args) {
+export function text(path, ...args) {
   if (!translations) initializeAppLanguage();
-  const value =
-    translations.hasOwnProperty(key) && translations[key].length > 0
-      ? translations[key]
-      : `[${key}]`;
-  if (!translations[key])
-    console.warn(`Missing ${currentLanguage} translation for key: ${key}`);
-  // Replace all instances of '%%' in the string with the passed in arguments
+  const value = path.split('.').reduce((acc, curr) => acc[curr], translations);
+  if (!value) {
+    console.error(`No translation found for path '${path}'`);
+    return `[${path}]`;
+  }
+
+  // Replace all instances of '%%' in the string with the passed-in arguments
   return value.replace(/%%/g, () => args.shift());
 }
 

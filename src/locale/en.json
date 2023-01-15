@@ -1,1 +1,12 @@
-{}
+{
+  "hero": {
+    "title": "Hi, I'm Olin.",
+    "subtitle": "I'm a German-American web developer living and working in Cologne, Germany.",
+    "tagline": "I write full-stack code for web-apps and games.",
+    "btn-my-resume": "My Resume",
+    "btn-scroll": "Scroll Down"
+  },
+  "skills": {},
+  "footer": {},
+  "about": {}
+}
