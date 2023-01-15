@@ -61,7 +61,7 @@
     }
   },
   "language-picker": {
-    "looking-for": "Zur %% Seite wechseln",
+    "looking-for": "Zur %% Seite",
     "languages": {
       "en": "Englischen",
       "de": "Deutschen"
