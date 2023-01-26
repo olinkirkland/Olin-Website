@@ -10,7 +10,7 @@
     "heading": "Ich bringe <strong>eine einzigartige Perspektive</strong> auf die Anwendungsgestaltung durch meine Erfahrung in <strong>Museen</strong> und <strong>Spielen</strong>.",
     "cards": {
       "card-1": "Ich spezialisiere mich auf die Erstellung intuitiver Benutzererfahrungen. Ich habe Erfahrung mit mobilen, Web- und Desktop-Entwicklungen und habe eine Geschichte von Projekten mit <strong>Museumsexponaten</strong> bis hin zur Verwaltung von Sicherheitssystemen und <strong>mobilen Spielen</strong>.",
-      "card-2": "Mein Tech-Stack umfasst HTML/CSS, JavaScript, <strong>TypeScript</strong> und Apache Flex/ActionScript. Ich bin auch mit React, Node.js und MongoDB vertraut. <br /><br /> Ich bin Muttersprachler in Englisch und Deutsch.",
+      "card-2": "Mein Tech-Stack umfasst HTML/CSS, JavaScript, <strong>TypeScript</strong> und Apache Flex/ActionScript. Ich bin auch mit React.js, Node.js und MongoDB vertraut. <br /><br /> Ich bin Muttersprachler in Englisch und Deutsch.",
       "card-3": "Die Bewegung von Pixeln ist mein Beruf, aber es gibt mehr, was mich antreibt. <br /><br /> In meiner Freizeit mag ich joggen, neue Orte entdecken und verschiedene Küchen probieren, Podcasts hören und Brettspiele spielen."
     }
   },
@@ -28,8 +28,8 @@
       "badge-3": "HTML",
       "badge-4": "CSS",
       "badge-5": "SCSS",
-      "badge-6": "React",
-      "badge-7": "Node",
+      "badge-6": "React.js",
+      "badge-7": "Node.js",
       "badge-8": "JSON",
       "badge-9": "Bootstrap",
       "badge-10": "Tailwind",

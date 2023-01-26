@@ -10,7 +10,7 @@
     "heading": "I bring a<strong> unique perspective</strong> to application design through my background in<strong> museums</strong> and <strong> games</strong>.",
     "cards": {
       "card-1": "I specialize in creating intuitive user experiences. I have experience with mobile, web and desktop development, and have a history of projects ranging from <strong>museum exhibitions</strong> to security system management and <strong>mobile games</strong>.",
-      "card-2": "My tech stack includes HTML/CSS, JavaScript, <strong>TypeScript</strong> and Apache Flex/ActionScript. I'm also familiar with React, Node.js, and MongoDB.<br /><br />I'm a native English and German speaker.",
+      "card-2": "My tech stack includes HTML/CSS, JavaScript, <strong>TypeScript</strong> and Apache Flex/ActionScript. I'm also familiar with React.js, Node.js, and MongoDB.<br /><br />I'm a native English and German speaker.",
       "card-3": "Moving pixels is my occupation, but there's more to what drives me.<br /><br />In my leisure time, I like jogging, discovering new locations and sampling different cuisines, listening to podcasts, and playing board games."
     }
   },
@@ -28,8 +28,8 @@
       "badge-3": "HTML",
       "badge-4": "CSS",
       "badge-5": "SCSS",
-      "badge-6": "React",
-      "badge-7": "Node",
+      "badge-6": "React.js",
+      "badge-7": "Node.js",
       "badge-8": "JSON",
       "badge-9": "Bootstrap",
       "badge-10": "Tailwind",
