@@ -100,6 +100,15 @@ let certificates = [
       year: 2022
     },
     file: abtCertificatePdf
+  },
+  {
+    type: udemy,
+    name: 'Vue - The Complete Guide (incl. Router & Composition API)',
+    date: {
+      month: 6,
+      year: 2023
+    },
+    url: 'https://www.udemy.com/certificate/UC-a00238ce-da76-4ebd-812e-69eb91a8e104/'
   }
 ];
 
