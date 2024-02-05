@@ -4,7 +4,9 @@
     "subtitle": "I'm a German-American web developer living and working in Cologne, Germany.",
     "tagline": "I write full-stack code for web-apps and games.",
     "btn-my-resume": "My Resume",
-    "btn-scroll": "Scroll Down"
+    "btn-scroll": "Scroll Down",
+    "writing": "Looking for my TTRPG writing?",
+    "writing-link": "Click here."
   },
   "about": {
     "heading": "I bring a<strong> unique perspective</strong> to application design through my background in<strong> museums</strong> and <strong> games</strong>.",

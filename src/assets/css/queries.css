@@ -119,6 +119,7 @@ instead, 1rem = 1em = 16px */
   .header-links {
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 1.2rem;
   }
 
   .intro-image {

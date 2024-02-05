@@ -32,6 +32,16 @@ function Hero() {
             </a>
           </div>
         </div>
+        <span>
+          {text('hero.writing')}{' '}
+          <a
+            href="https://olinkirk.land/scribbles"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {text('hero.writing-link')}
+          </a>
+        </span>
       </div>
 
       <div className="scroll-prompt">
